@@ -108,3 +108,6 @@ Once it's running, open your web browser and navigate to:
 **http://127.0.0.1:8000**
 
 You should see the Dream Car Finder application, ready to use! 
+
+All data belongs to 'jpayne' and they are only used for educational purposes
+https://www.kaggle.com/datasets/jpayne/852k-used-car-listings
