@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Car Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dream Car Finder</h1>
+            <p>Use semantic search to find the perfect car from our listings.</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <h2>Search for Your Dream Car</h2>
+                <div class="prompt-box">
+                    <input type="text" id="prompt-input" placeholder="e.g., 'a reliable truck for work'">
+                    <button id="search-button">Search</button>
+                </div>
+                <div id="search-results-container">
+                    <h3>Search Results</h3>
+                    <p id="chatbot-response" class="chatbot-message"></p>
+                    <ul id="search-results-list">
+                        <!-- Search results will be inserted here by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="listings-section">
+                <h2>Available Listings (Sample)</h2>
+                <table id="listings-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Mileage</th>
+                            <th>Price</th>
+                            <th>City</th>
+                            <th>State</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listings-tbody">
+                        <!-- Table rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>CigiMLOps Project</p>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> 

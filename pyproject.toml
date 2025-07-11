@@ -1,0 +1,22 @@
+[project]
+name = "CigiMLOPS"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Cigi", email = "-"},
+]
+dependencies = ["pandas>=2.3.1", "scikit-learn>=1.7.0", "pyarrow>=20.0.0", "sentence-transformers>=5.0.0", "fastapi>=0.116.0", "uvicorn[standard]>=0.35.0", "python-multipart>=0.0.20"]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+start = "uvicorn src.main:app --reload"
+c-sample = "python src/modules/00_create_sample.py"
+p-data = "python src/modules/01_prepare_data.py"
+g-embeddings = "python src/modules/02_generate_embeddings.py"
+pipeline = {composite = ["c-sample", "p-data", "g-embeddings"]}
